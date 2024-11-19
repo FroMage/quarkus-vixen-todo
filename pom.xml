@@ -14,10 +14,10 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-    <quarkus.platform.version>3.9.3</quarkus.platform.version>
+    <quarkus.platform.version>3.16.3</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-    <renarde.version>3.0.12</renarde.version>
-    <web-bundler.version>1.4.0</web-bundler.version>
+    <renarde.version>3.0.18</renarde.version>
+    <web-bundler.version>1.7.3</web-bundler.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -227,7 +227,8 @@
         </plugins>
       </build>
       <properties>
-        <quarkus.package.type>native</quarkus.package.type>
+        <skipITs>false</skipITs>
+        <quarkus.native.enabled>true</quarkus.native.enabled>
       </properties>
     </profile>
   </profiles>
